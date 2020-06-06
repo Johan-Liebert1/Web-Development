@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/results.css">
+
+<h1>
+	This is the result of your query
+</h1>
+
+<% for (var i = 0; i < key.length; i++){ %>
+	<li><span id="title"><%= key[i] %></span> - <span id="info"><%= result["Search"][0][key[i]] %></span></li>						  
+<% } %>
